@@ -3,8 +3,8 @@ let nameOutput = document.getElementById('name-output');
 
 input.oninput = function () {
   if (input.value === '') {
-    nameOutput.innerHTML = 'Anonymous';
+    nameOutput.textContent = 'Anonymous';
   } else {
-    nameOutput.innerHTML = input.value;
+    nameOutput.textContent = input.value;
   }
 };

@@ -5,7 +5,7 @@ idInput.addEventListener('focus', () => {
 });
 
 idInput.addEventListener('blur', () => {
-  const isValid = idInput.value.length === +idInput.dataset.length;
+  const isValid = idInput.value.length === Number(idInput.dataset.length);
   const addClass = isValid ? 'valid' : 'invalid';
   idInput.classList.add(addClass);
 });
