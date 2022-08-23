@@ -1,7 +1,7 @@
 const idInput = document.querySelector('#validation-input');
 idInput.addEventListener('focus', () => {
   idInput.classList.remove('valid', 'invalid');
-  idInput.value = '';
+  //   idInput.value = '';
 });
 
 idInput.addEventListener('blur', () => {
